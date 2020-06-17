@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Mohamed Amine LEJMI</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-center d-flex justify-content-center w-100">
+            <li class="nav-item d-flex justify-content-center">
+                <a class="nav-link text-white" href="#">
+                    <span class="enLng">Presentation</span>
+                    <span class="frLng">Présentation</span>
+                </a>
+            </li>
+            <li class="nav-item d-flex justify-content-center">
+                <a class="nav-link text-white" href="#">
+                    <span class="enLng">Skills</span>
+                    <span class="frLng">Compétences</span>
+                </a>
+            </li>
+            <li class="nav-item d-flex justify-content-center">
+                <a class="nav-link text-white" href="#">
+                    <span class="enLng">Projects</span>
+                    <span class="frLng">Projets</span>
+                </a>
+            </li>
+            <li class="nav-item d-flex justify-content-center">
+                <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+        </ul>
+        <div class="text-center">
+            <img id="enLnBtn"
+                 class="btn"
+                 src="assets/logos/fr_flag.gif"
+                 alt="English"
+                 width="60">
+            <img id="frLnBtn"
+                 class="btn"
+                 src="assets/logos/en_flag.png"
+                 alt="Français"
+                 width="60">
+        </div>
+    </div>
+</nav>
+<main>
+    <section id="presentation" class="container-fluid">
+        <div id="top-presentation" class="d-flex position-relative">
+            <div id="presentation-pic" class="d-flex justify-content-center align-items-baseline">
+                <div id="gradient-background"></div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="assets/images/moi.png" alt="Mohamed amine LEJMI">
+                </div>
+            </div>
+            <div id="presentation-text" class="position-absolute">
+                <h1>Mohamed amine LEJMI</h1>
+                <div class="d-flex flex-column justify-content-center align-items-lg-center">
+                    <h2 class="text-center">
+                        <span class="enLng">Full Stack php developer</span>
+                        <span class="frLng">Développeur PHP Full Stack</span>
+                    </h2>
+                    <div id="presentation-logos" class="d-flex justify-content-between">
+                        <img src="assets/logos/html.png" alt="">
+                        <img src="assets/logos/css.png" alt="">
+                        <img src="assets/logos/js.png" alt="">
+                        <img src="assets/logos/php.png" alt="">
+                        <img src="assets/logos/symfony.png" alt="">
+                        <img src="assets/logos/angular.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-presentation">
+            <div class="enLng text-justify"></div>
+            <div class="frLng text-justify"></div>
+        </div>
+    </section>
+    <section id="skills" class="container-fluid mb-5">
+        <div class="row col-xl-10 align-content-between mr-sm-0 ml-sm-0">
+        </div>
+    </section>
+    <section id="projects" class="container-fluid ">
+        <div class="row justify-content-around align-content-between mr-sm-0 ml-sm-0">
+        </div>
+    </section>
+    <section id="contact" class="container-fluid">
+        <div id="form-container" class="col-lg-10">
+            <form>
+                <div class="form-group row">
+                    <label for="emailAdress" class="col-md-3 col-form-label">
+                        <span class="enLng">Email adress</span>
+                        <span class="frLng">Adresse email</span>
+                    </label>
+                    <div class="col-md-9">
+                        <input name="email" type="email" class="form-control" id="emailAdress"
+                               placeholder="email@example.com">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="nameField" class="col-md-3 col-form-label">
+                        <span class="enLng">Name</span>
+                        <span class="frLng">Nom</span>
+                    </label>
+                    <div class="col-md-9">
+                        <input name="name" type="text" class="form-control" id="nameField"
+                               placeholder="Enter your name ...">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="messageField" class="col-md-3 col-form-label">Message</label>
+                    <div class="col-md-9">
+                        <textArea name="message" class="form-control" id="messageField"
+                                  placeholder="Enter your message ..."></textArea>
+                    </div>
+                </div>
+                <div class="form-group row justify-content-end">
+                    <div class="col-md-4">
+                        <button id="sendMessage" class="form-control">
+                            <span class="enLng">send message</span>
+                            <span class="frLng">Envoyer le message</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div id="loader-container">
+        <div id="loader" class="d-flex justify-content-center align-items-center">
+            <?xml version="1.0" encoding="utf-8"?>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 style="margin: auto; background: none; display: block; shape-rendering: auto;" width="200px"
+                 height="200px"
+                 viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                <circle cx="50" cy="50" r="9.25689" fill="none" stroke="#ffffff" stroke-width="2">
+                    <animate attributeName="r" repeatCount="indefinite" dur="1s" values="0;40" keyTimes="0;1"
+                             keySplines="0 0.2 0.8 1" calcMode="spline" begin="-0.5s"></animate>
+                    <animate attributeName="opacity" repeatCount="indefinite" dur="1s" values="1;0" keyTimes="0;1"
+                             keySplines="0.2 0 0.8 1" calcMode="spline" begin="-0.5s"></animate>
+                </circle>
+                <circle cx="50" cy="50" r="30.3515" fill="none" stroke="#ff6f14" stroke-width="2">
+                    <animate attributeName="r" repeatCount="indefinite" dur="1s" values="0;40" keyTimes="0;1"
+                             keySplines="0 0.2 0.8 1" calcMode="spline"></animate>
+                    <animate attributeName="opacity" repeatCount="indefinite" dur="1s" values="1;0" keyTimes="0;1"
+                             keySplines="0.2 0 0.8 1" calcMode="spline"></animate>
+                </circle>
+            </svg>
+        </div>
+    </div>
+    <div class="modal fade" id="project-modal" tabindex="-1" role="dialog" aria-labelledby="modal-title"
+         aria-hidden="true">
+        <div id="modal-dialog" class="modal-dialog modal-dialog-centered" role="document">
+
+        </div>
+    </div>
+</main>
+</body>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+<script src="assets/jquery/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="main.js"></script>
+</html>
